@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>issuu</title>
 </head>
 <body>
     <header>
-        <img src="issuu" alt="issuu logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Issuu_logo.svg/2560px-Issuu_logo.svg.png" alt="issuu logo">
         <div>
             <p>Already a user?</p>
             <a href="#">sign in</a>
@@ -16,32 +19,34 @@
     </header>
     <main>
         <h2>Create an Issu Account.</h2>
-        <div>
-            <div><img src="#" alt="Google Sign up"><a href="#">Sign in with Google</a></div>
-            <div><img src="#" alt="Facebook Sign up"><a href="#">Sign in with Facebook</a></div>
+        <div class="login-opt">
+            <div class="google-block"><img src="https://static.vecteezy.com/system/resources/previews/013/948/549/original/google-logo-on-transparent-white-background-free-vector.jpg" alt="Google Sign up"><a href="#">Sign in with Google</a></div>
+            <div class="facebook-block"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/F_icon_reversed.svg" alt="Facebook Sign up"><a href="#">Sign in with Facebook</a></div>
         </div>
         <p>or with Email</p>
         <form action="">
             <div class="email-area">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" placeholder="e.g. john.doe@email.com">
             </div>
-            <div class="password-are">
+            <div class="password-area">
                 <label for="password">Password</label>
                 <input type="password">
             </div>
-            <input type="checkbox" name="term-services" id="terms-services">
-            <p>I accept the <a href="#">terms of Servcice</a>and the <a href="#">Profesional Terms of Service</a></p>
-            <input type="submit" value="CREATE ACCOUNT">
-        </form>
-        <Footer>
-            <p>Issuu Inc.</p>
-            <div>
-                <a href="#">Terms</a>
-                <a href="#">Privacy</a>
-                <a href="#">DMCA</a>
+            <div class="submit">
+                <input type="checkbox" name="term-services" id="terms-services">
+                <p>I accept the <a href="#">terms of Servcice</a>and the <a href="#">Profesional Terms of Service</a></p>
+                <input type="submit" value="CREATE ACCOUNT">
             </div>
-        </Footer>
+        </form>
     </main>
+    <Footer>
+        <p>Issuu Inc.</p>
+            <ul>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">DMCA</a></li>
+            </ul>           
+    </Footer>
 </body>
 </html>
