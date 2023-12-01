@@ -11,34 +11,36 @@
 </head>
 <body>
     <header>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Issuu_logo.svg/2560px-Issuu_logo.svg.png" alt="issuu logo">
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Issuu_logo.svg/2560px-Issuu_logo.svg.png" alt="issuu logo"></div>
         <div>
             <p>Already a user?</p>
             <a href="#">sign in</a>
         </div>
     </header>
     <main>
-        <h2>Create an Issu Account.</h2>
-        <div class="login-opt">
-            <div class="google-block"><img src="https://static.vecteezy.com/system/resources/previews/013/948/549/original/google-logo-on-transparent-white-background-free-vector.jpg" alt="Google Sign up"><a href="#">Sign in with Google</a></div>
-            <div class="facebook-block"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/F_icon_reversed.svg" alt="Facebook Sign up"><a href="#">Sign in with Facebook</a></div>
+        <div class="window">
+            <h2>Create an Issuu Account.</h2>
+            <div class="login-opt">
+                <div class="google-block"><a href="#"><img src="https://static.vecteezy.com/system/resources/previews/013/948/549/original/google-logo-on-transparent-white-background-free-vector.jpg" alt="Google Sign up">Sign in with Google</a></div>
+                <div class="facebook-block"><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/F_icon_reversed.svg" alt="Facebook Sign up">Sign in with Facebook</a></div>
+            </div>
+            <p>or with Email</p>
+            <form action="">
+                <div class="email-area">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="e.g. john.doe@email.com">
+                </div>
+                <div class="password-area">
+                    <label for="password">Password</label>
+                    <input type="password">
+                </div>
+                <div class="submit">
+                    <input type="checkbox" name="term-services" id="terms-services">
+                    <p>I accept the <a href="#">terms of Servcice</a>and the <a href="#">Profesional Terms of Service</a></p>
+                    <input type="submit" value="CREATE ACCOUNT">
+                </div>
+            </form>
         </div>
-        <p>or with Email</p>
-        <form action="">
-            <div class="email-area">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="e.g. john.doe@email.com">
-            </div>
-            <div class="password-area">
-                <label for="password">Password</label>
-                <input type="password">
-            </div>
-            <div class="submit">
-                <input type="checkbox" name="term-services" id="terms-services">
-                <p>I accept the <a href="#">terms of Servcice</a>and the <a href="#">Profesional Terms of Service</a></p>
-                <input type="submit" value="CREATE ACCOUNT">
-            </div>
-        </form>
     </main>
     <Footer>
         <p>Issuu Inc.</p>

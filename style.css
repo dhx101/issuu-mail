@@ -2,61 +2,75 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 700px;
 }
 
 header {
     position: relative;
-    width: auto;
-    padding: 25px 100px;
+    display: block;
+    width: 100%;
+    height: 10vh;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-header > *{
-    display: inline-block;
+header div{
+    height: 100%;
 }
 
-header > p {
-    font-size: 50px;
+header div:first-child {
+    float: left;
+    padding: 25px 50px;
+
 }
 
-header img {
-    width: 200px;
+header div:last-child {
+    float: right;
+    padding: 25px 50px;
 }
 
-header > div {
-    position: absolute;
-    right: 0;
-    padding: 0 100px;
+div img {
+    height: 100%;
 }
 
 main {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+.window {
     position: absolute;
     top: 50%;
-    right: 25%;
-    transform: translate(-50%, -50%);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
 
 }
 
-main h2 {
+.window h2 {
     font-size: 30px;
     padding: 25px 0;
 }
 
-main img {
+.window img {
     width: 25px;
+    padding-right: 5px;
 }
 
 .login-opt div {
     display: inline-block;
     padding: 5px;
-    box-sizing: border-box;
 }
 
 .login-opt a {
     color: white;
     text-decoration: none;
     padding: 5px;
-    box-sizing: content-box;
     position: relative;
 }
 
@@ -68,7 +82,7 @@ main img {
     background-color: #4968AD;
 }
 
-main > p {
+.window > p {
     padding: 25px 0;
 }
 
@@ -84,7 +98,8 @@ form label {
 [class*="area"] input {
     margin-top: 10px;
     height: 30px;
-    width: 50%;
+    width: 100%;
+    max-width: 500px;
 }
 
 input[type="checkbox"] {
@@ -114,22 +129,21 @@ input[type="submit"] {
 
 footer {
     display: block;
-    box-sizing: border-box;
-    position: absolute;
+    height: 10vh;
     bottom: 0;
-    padding: 50px 0 50px 150px;
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 5px;}
+    box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 5px;
+    background-color: #5086ED;
+}
 
 footer p {
-    display: inline;
+    display: inline-block;
+    padding: 25px 50px;
 }
 
 footer ul {
-    display: inline;
+    display: inline-block;
     position: relative;
-    left: 100px;
-    
 }
 
 footer ul li {
